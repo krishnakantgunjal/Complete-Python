@@ -3,18 +3,18 @@
 
 import time 
 def timer(func):
-      def wrappper():
+      def wrappper(n):
             start_time = time.time()
-            func()
+            func(n)
             end_time = time.time()
             result = end_time - start_time
             print("total time to excute function :-",result)
       return wrappper
 @timer
-def Sums():
+def Sums(n):
     total=0
-    for x in range(0,1000001):
+    for x in range(0,n+1):
          total += x
-         print("sum:-",total)
-Sums()
+    print("sum:-",total)
+Sums(1000000)
       
