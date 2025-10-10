@@ -13,3 +13,16 @@ while x>0 :
     revers_num =revers_num*10+digit 
     x=x//10 # 2 
 print(revers_num)
+
+
+# Input: 45
+
+# Take last digit: 45 % 10 = 5 → revers_num = 0*10 + 5 = 5
+
+# Remove last digit: 45 // 10 = 4
+
+# Next digit: 4 % 10 = 4 → revers_num = 5*10 + 4 = 54
+
+# Remove last digit: 4 // 10 = 0 → stop
+
+# Output: 54 
